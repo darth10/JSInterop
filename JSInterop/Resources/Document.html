@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Document</title>
+    <script type="text/javascript">
+
+		function invokeOnEvent(e) {
+		  try {
+		    window.external.OnEvent(e);
+		  } catch(e) { }
+		}
+
+		function jsFunction(e) {
+		  alert(e);
+		}
+
+    </script>
+</head>
+<body>
+    <div onclick="invokeOnEvent(this)">
+        <h1>
+            Hello world! Click me!
+        </h1>
+    </div>
+</body>
+</html>
